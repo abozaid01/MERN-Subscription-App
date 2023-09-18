@@ -35,8 +35,8 @@ export default function Hero() {
             Grow, learn, and become more sucessfull by reading some of the top
             articles by highly reputable individuals
           </SubHeading>
-          <Modal text="Sign up" variant="primary" />
-          <Modal text="Sign in" variant="primary" />
+          <Modal text="Sign up" variant="primary" isSignupFlow={true} />
+          <Modal text="Sign in" variant="primary" isSignupFlow={false} />
         </HeaderContainer>
       </Container>
     </HeaderComponent>

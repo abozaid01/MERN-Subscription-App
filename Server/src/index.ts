@@ -1,5 +1,6 @@
 import express from "express";
 import monogoose from "mongoose";
+import cors from "cors";
 
 import authRoutes from "./routes/auth";
 
@@ -16,6 +17,7 @@ const app = express();
 // Middlewares
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(cors());
 
 // Routes
 app.use("/auth", authRoutes);

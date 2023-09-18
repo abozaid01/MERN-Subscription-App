@@ -64,7 +64,7 @@ router.post("/signup", async (req, res) => {
   // 6) send back the response with the data
   res.status(201).json({
     status: "success",
-    errors: [{}],
+    errors: [],
     data: { token, user: { id: newUser._id, email: newUser.email } },
   });
 });
@@ -99,7 +99,7 @@ router.post("/login", async (req, res) => {
   // 4) send back the response with the data
   res.status(201).json({
     status: "success",
-    errors: [{}],
+    errors: [],
     data: { token, user: { id: user._id, email: user.email } },
   });
 });
